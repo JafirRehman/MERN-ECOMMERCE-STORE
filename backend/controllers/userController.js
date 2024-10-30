@@ -114,6 +114,7 @@ const updateCurrentUserProfile = asyncHandler(async (req, res) => {
   }
 });
 
+// Admin routes start here
 const deleteUserById = asyncHandler(async (req, res) => {
   const user = await User.findById(req.params.id);
 
